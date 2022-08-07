@@ -1,0 +1,1 @@
+# prida-thin-configs
