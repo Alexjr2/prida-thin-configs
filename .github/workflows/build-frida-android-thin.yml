@@ -52,9 +52,9 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "<>"
           git clone -b ${{ github.event.inputs.from }} --recurse-submodules https://github.com/frida/frida
-          git clone https://github.com/KingMahmud/KingMahmud         
+          git clone https://github.com/Alexjr2/prida-thin-configs        
           cd frida
-          git apply ../KingMahmud/patches/frida/thin/config_mk.patch
+          git apply ../prida-thin-configs/patches/frida/thin/config_mk.patch
           make core-android-arm64
           make core-android-arm
           make core-android-x86
