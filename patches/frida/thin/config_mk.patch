@@ -6,10 +6,10 @@ index 470bbe6..3a816bb 100644
  FRIDA := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
  
  # Features ordered by binary footprint, from largest to smallest
--FRIDA_V8 ?= auto
++FRIDA_V8 ?= auto
 +
 +# V8 is heavy.
-+FRIDA_V8 ?= disabled
++FRIDA_V8 ?= enabled
  FRIDA_CONNECTIVITY ?= enabled
  FRIDA_DATABASE ?= enabled
 -FRIDA_JAVA_BRIDGE ?= auto
